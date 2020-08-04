@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Input Date</title>
-​
+
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
 	<style type="text/css">
@@ -12,9 +12,9 @@
 		.btn-primary {
 			width: 100%;
 		}
-​
+
 	</style>
-​
+
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment.min.js"></script> 
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
@@ -57,7 +57,7 @@
     
 </head>
 <body>
-​
+
 <div style="overflow:hidden;" id="custom">
     <div class="form-group">
         <div class="row">
@@ -68,7 +68,7 @@
     </div>
      <center><input type="submit" class="btn btn-info" value="Submit" id="submit"></center>
 </div>
-​
+
  <script type="text/javascript">
         $(function () {
             $('#datetimepicker12').datetimepicker({
@@ -76,12 +76,12 @@
                 format: 'LD',
                 sideBySide: true,
 		minDate: new Date(),
-		maxDate: '+1w-1'
+        maxDate: new Date().setDate(new Date().getDate()+6)
             });
         });
        
     </script>
-​
+
 		
 </body>
 </html>
